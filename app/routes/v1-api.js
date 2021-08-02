@@ -1,4 +1,3 @@
-const { response } = require('express');
 const express = require('express');
 const router = express.Router();
 
@@ -7,7 +6,7 @@ const players = require('../data');
 let playerIdRun = 6;
 
 router.get('/',(req,res) => {
-    console.log(players);
+    //console.log(players);
     res.json(players);
 });
 
