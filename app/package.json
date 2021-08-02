@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-tuxtum",
+  "version": "1.0.0",
+  "description": "My frist project with myself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gambitmis/nodejs-tuxtum.git"
+  },
+  "author": "chalermsak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gambitmis/nodejs-tuxtum/issues"
+  },
+  "homepage": "https://github.com/gambitmis/nodejs-tuxtum#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12"
+  }
+}
