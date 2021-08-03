@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const path = require('path');
 
 
 const routeApiV1 = require('./routes/v1-api');
@@ -16,7 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/v1/api',routeApiV1);
 app.use('/v1/web',routeWebV1);
 
-//express-handlebar
+//ejs
+app.set('views', path.join(__dirname,'views'));
+app.set('view engine','ejs');
 
 
 app.get('/', (req,res) => {
