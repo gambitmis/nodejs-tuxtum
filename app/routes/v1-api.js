@@ -15,7 +15,7 @@ router.get('/:id',(req,res) => {
     //console.log(req.params.id);
     const playerId = Number.parseInt(req.params.id,10);
     const player = players.find(
-        (players) => players.id === playerId );
+        (obj) => obj.id === playerId );
     //console.log(player);
     res.json(player);
 });
@@ -24,7 +24,7 @@ router.put('/:id', (req,res) => {
     const playerId = Number.parseInt(req.params.id,10);
     //console.log(playerId);
     const playerIndex = players.findIndex(
-        (players) => players.id === playerId);
+        (player) => player.id === playerId);
     const updatePlayer = {
         id: playerId,
         ...req.body

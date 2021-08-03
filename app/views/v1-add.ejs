@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('v1-header') -%>
+
+    <body>
+        <%- include('v1-navbar') -%>
+            <form action="/v1/web/add" method="POST">
+            <div class="container mt-5" style="max-width: 50%;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Short Name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Fullname</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Enter Fullname" name="fullname">
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">ImgUrl</label>
+                    <input type="text" class="form-control" id="img_url" placeholder="Enter Image address" name="img_url">
+                </div>
+                <input type="submit" class="btn btn-primary" value="ADD">
+                <h2 class="mt-2">Example for Add data</h2>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Fullname</th>
+                        <th scope="col">Imgurl</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Del Piero</td>
+                        <td>Alessandro Del Piero</td>
+                        <td>https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Del_Piero_Juventus_1998.jpg/440px-Del_Piero_Juventus_1998.jpg</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Totti</td>
+                        <td>Francesco Totti</td>
+                        <td>https://upload.wikimedia.org/wikipedia/commons/4/42/KL-2018_%284%29.jpg</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Captain Tsubasa</td>
+                        <td>Tsubasa Oozora</td>
+                        <td>https://upload.wikimedia.org/wikipedia/en/2/20/TsubasaOozoramanga.png</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
+            </form> 
+    </body>
+
+</html>

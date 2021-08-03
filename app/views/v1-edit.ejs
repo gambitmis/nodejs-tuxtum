@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('v1-header') -%>
+
+    <body>
+        <%- include('v1-navbar') -%>
+            <form action="/v1/web/edit/<%= player.id %>" method="POST">
+            <div class="container mt-5" style="max-width: 50%;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter Short Name" name="name" value="<%= player.name %>">
+                </div>
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Fullname</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Enter Fullname" name="fullname" value="<%= player.fullname %>">
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">ImgUrl</label>
+                    <input type="text" class="form-control" id="img_url" placeholder="Enter Image address" name="img_url" value="<%= player.imgUrl %>"> 
+                </div>
+                <input type="submit" class="btn btn-primary" value="UPDATE">
+            </div>
+            
+            </form> 
+    </body>
+
+</html>
